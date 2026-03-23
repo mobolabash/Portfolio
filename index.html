@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/425eab629a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+
+            <h2> <a href="/">Mobolaji Bashorun</a></h2>
+
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+            <div><a href="#contact">Contact</a></div>
+        </nav>
+
+
+        <!-- Hero Section -->
+        <section>
+            <div>
+                <div>
+                    <h1>Hi, I am <span>Mobolaji Bashorun</span></h1>
+                    <h4>Frontend Developer and Product Design</h4>
+                    <p>
+                        Welcome to my website! I am a passionate Frontend Developer with a knack for creating engaging
+                        and
+                        user-friendly
+                        web
+                        applications. With a strong foundation in HTML, CSS, and JavaScript, I strive to build seamless
+                        digital
+                        experiences that
+                        captivate users and drive results.
+                    </p>
+                </div>
+
+                <ul>
+                    <li><a href="">Hire Me</a></li>
+                    <li><a href="">Let's Talk</a></li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <i class="fa-brands fa-facebook"></i>
+                    </li>
+
+                    <li>
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </li>
+                </ul>
+            </div>
+            <img src="/bolo.jpeg" width="200" alt="Profile picture">
+        </section>
+
+    </header>
+
+
+    <br><br>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <i class="fa-solid fa-bolt"></i>
+        <h2>Skills</h2>
+    </section>
+
+    <div>
+        <div>
+            <i class="fa-solid fa-palette"></i>
+            <h2>UI/UX Design</h2>
+            <p>Creating intuitive and beautiful interfaces based on client's preferences</p>
+        </div>
+
+        <div>
+            <span class="material-symbols-outlined">
+                code
+            </span>
+            <h2>Frontend Development</h2>
+            <p>modern React and Tailwind architecture</p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>Backend Development</h2>
+            <p>Scalable logic and clean codebases using modern technologies</p>
+        </div>
+
+        <div>
+            <i class="fa-brands fa-figma"></i>
+            <h2>Figma</h2>
+            <p>Prototyping and design system following the modern design principles</p>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <!-- Project section -->
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+
+        <br><br>
+
+        <div>
+            <div>
+                <img src="https://t4.ftcdn.net/jpg/04/49/75/23/360_F_449752328_r4TeWFha21690lPh1I2xyvpiAaLghhdS.jpg"
+                    width="300" alt="">
+            </div>
+            <div>
+                <div>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Github</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Portfolio Landing Page</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga hic illum officia optio doloremque
+                        assumenda
+                        tenetur magnam minus, porro recusandae adipisci, voluptatem eveniet vero suscipit dolorem
+                        distinctio quibusdam
+                        perferendis dolores.</p>
+                </div>
+                <div>
+                    <button>View Demo</button>
+                    <button>GitHub Repo</button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+
+    <section id="contacts" class="contacts">
+        <h2>Contact</h2>
+
+        <form action="">
+            <label for="name">Name</label>
+            <input type="text" id="name">
+
+            <br><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email">
+            <br><br>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone">
+            <br><br>
+
+            <label for="msg">Message</label>
+            <br>
+            <textarea name="text" id="msg" placeholder="Your messager"></textarea>
+
+            <br><br>
+
+            <button>Send Message</button>
+        </form>
+
+    </section>
+
+
+    <footer id="footer" class="footer">
+        <p>&copy; <span id="year"></span>| Mobolaji Bashorun | All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').
+            textContent = new Date().getFullYear()
+    </script>
+
+
+</body>
+
+</html>

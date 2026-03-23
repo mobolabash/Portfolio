@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mars Discovery - The Daily News</title>
+
+    <!-- 1. THE DATA LAYER: JSON-LD (Inside the <head>) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "New Discovery on Mars",
+      "image": ["https://example.com"],
+      "datePublished": "2026-03-19T08:00:00+08:00",
+      "author": [{
+          "@type": "Person",
+          "name": "Jane Doe"
+      }]
+    }
+    </script>
+</head>
+
+<body>
+    <!-- 2. THE STRUCTURAL LAYER: Semantic HTML (Inside the <body>) -->
+    <header>
+        <h1>The Daily News</h1>
+        <nav>
+            <ul>
+                <li><a href="/world">World</a></li>
+                <li><a href="/tech">Tech</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <header>
+                <h2>New Discovery on Mars</h2>
+                <p>By Jane Doe | <time datetime="2026-03-19">March 19, 2026</time></p>
+            </header>
+
+            <figure>
+                <img src="mars.jpg" alt="Surface of Mars">
+                <figcaption>New evidence suggests water once flowed here.</figcaption>
+            </figure>
+
+            <section>
+                <p>Scientists have uncovered groundbreaking evidence...</p>
+            </section>
+        </article>
+    </main>
+
+    <br>
+
+    <picture>
+        <!-- Desktop: show large image if screen is at least 800px -->
+        <source media="(min-width: 800px)" srcset="large-landscape.jpg">
+
+        <!-- Tablet: show medium image if screen is at least 450px -->
+        <source media="(min-width: 450px)" srcset="medium-square.jpg">
+
+        <!-- Mobile/Fallback: show small image by default -->
+        <img src="small-portrait.jpg" alt="A descriptive caption of the image">
+    </picture>
+
+    <br><br><br>
+
+    <picture>
+        <source srcset="image.avif" type="image/avif">
+        <source srcset="image.webp" type="image/webp">
+        <img src="image.jpg" alt="A sunset over the mountains">
+    </picture>
+
+    <br><br>
+
+    <footer>
+        <p>&copy; 2026 The Daily News</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+/* style.css */
+body {
+    background-color: #eae9dc; /* Light grey background */
+    font-family: sans-serif;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}

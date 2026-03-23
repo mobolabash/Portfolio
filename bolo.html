@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website - Navigation Example</title>
+    <style>
+        /* Simple styling to make the navigation visible */
+        nav {
+            background-color: #333;
+            padding: 1rem;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            color: #ff9900;
+        }
+        
+        /* Style for the current/active page */
+        nav a.active {
+            color: #ff9900;
+            border-bottom: 2px solid #ff9900;
+        }
+        
+        main {
+            padding: 2rem;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section with navigation -->
+    <header>
+        <h1>My Awesome Website</h1>
+        <p>Built with semantic HTML</p>
+    </header>
+    
+    <!-- PRIMARY NAVIGATION SECTION -->
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Main content -->
+    <main>
+        <h2>Welcome to Our Site</h2>
+        <p>This is the main content area. Notice how the navigation above uses the semantic <code>&lt;nav&gt;</code> element.</p>
+        
+        <h3>Why Use Semantic Navigation?</h3>
+        <p>Screen readers can announce "navigation region" when users encounter this section, making your site more accessible.</p>
+    </main>
+    
+    <!-- Footer with secondary navigation (optional) -->
+    <footer>
+        <p>&copy; 2026 My Awesome Website</p>
+        <!-- Secondary navigation can also use <nav> -->
+        <nav aria-label="Footer navigation">
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="terms.html">Terms of Service</a> |
+            <a href="sitemap.html">Sitemap</a>
+        </nav>
+    </footer>
+</body>
+</html>
